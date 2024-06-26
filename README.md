@@ -109,7 +109,7 @@ As a first step you'll need to:
     - Click the **Add a permission** button and then,
     - Ensure that the **My APIs** tab is selected.
     - In the list of APIs, select the name of the API you've created during the **Register the service app** step.
-    - In the **Delegated permissions** section, select the **demo.read** in the list. Use the search box if necessary.
+    - In the **Delegated permissions** section, select the **tasks.read** in the list. Use the search box if necessary.
     - Click on the **Add permissions** button at the bottom.
     - Click on the **Grant admin consent** button at the top.
 
@@ -134,13 +134,13 @@ Open the `App\authConfig.js` file. Then:
 
 Open the `App\policies.js` file. Then:
 
-1. Find the key `policies.names` and replace it with the names (IDs) of your policies/user-flows e.g. `b2c_1_susi_reset_v2`.
-1. Find the key `policies.authorities` abd replace it with the authority strings of your policies/user-flows e.g. `https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_susi_reset_v2`.
-1. Find the key `policies.authorityDomain` abd replace it with the domain of your authority e.g. `fabrikamb2c.b2clogin.com`.
+1. Find the key `policies.names` and replace it with the names (IDs) of your policies/user-flows e.g. `B2C_1A_SIGNUP_SIGNIN`.
+1. Find the key `policies.authorities` abd replace it with the authority strings of your policies/user-flows e.g. `https://eppersonaldevb2c.b2clogin.com/eppersonaldevb2c.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN`.
+1. Find the key `policies.authorityDomain` abd replace it with the domain of your authority e.g. `eppersonaldevb2c.b2clogin.com`.
 
 Open the `App\apiConfig.js` file. Then:
 
-1. Find the key `b2cScopes` and replace the existing value with the scope of your web API (if you have followed the [Tutorial: Node.js Web API with Azure AD B2C](https://github.com/Azure-Samples/active-directory-b2c-javascript-nodejs-webapi) above, this is `api://{your-web-apis-client-id}/demo.read`).
+1. Find the key `b2cScopes` and replace the existing value with the scope of your web API (if you have followed the [Tutorial: Node.js Web API with Azure AD B2C](https://github.com/Azure-Samples/active-directory-b2c-javascript-nodejs-webapi) above, this is `api://{your-web-apis-client-id}/tasks.read`).
 1. Find the key `webAPI` and replace the existing value with the coordinates of your web API (if you have followed the [Tutorial: Node.js Web API with Azure AD B2C](https://github.com/Azure-Samples/active-directory-b2c-javascript-nodejs-webapi) above, this is `http://localhost:5000`).
 
 ## Running the sample

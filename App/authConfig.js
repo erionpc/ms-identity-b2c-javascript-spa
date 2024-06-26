@@ -8,7 +8,7 @@
 
 const msalConfig = {
     auth: {
-      clientId: "Enter_the_Application_Id_Here", // This is the ONLY mandatory field; everything else is optional.
+      clientId: "aff3fe56-3225-45ac-ae7a-36d47d13e34d", // This is the ONLY mandatory field; everything else is optional.
       authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose sign-up/sign-in user-flow as your default.
       knownAuthorities: [b2cPolicies.authorityDomain], // You must identify your tenant's domain as a known authority.
       redirectUri: "http://localhost:6420", // You must register this URI on Azure Portal/App Registration. Defaults to "window.location.href".
@@ -58,6 +58,6 @@ const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 const tokenRequest = {
-  scopes: [...apiConfig.b2cScopes],  // e.g. ["https://fabrikamb2c.onmicrosoft.com/helloapi/demo.read"]
+  scopes: [...apiConfig.b2cScopes],  // e.g. ["https://eppersonaldevb2c.onmicrosoft.com/tasks-api/tasks.read"]
   forceRefresh: false // Set this to "true" to skip a cached token and go to the server to get a new token
 };

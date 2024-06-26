@@ -165,7 +165,7 @@ function passTokenToApi() {
 /**
  * To initiate a B2C user-flow, simply make a login request using
  * the full authority string of that user-flow e.g.
- * https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/B2C_1_edit_profile_v2 
+ * https://eppersonaldevb2c.b2clogin.com/eppersonaldevb2c.onmicrosoft.com/B2C_1A_PROFILEEDIT 
  */
 function editProfile() {
 
